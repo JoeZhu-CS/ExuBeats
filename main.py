@@ -20,7 +20,7 @@ if __name__ == "__main__":
     recommender = MusicRecommender(data_file)
 
     # 显示欢迎信息
-    print("\n===== 明日方舟音乐推荐系统 =====")
+    print("\n===== Clarity音乐推荐系统 =====")
     print("本系统帮助你根据喜欢的歌曲推荐相似的音乐。")
     print("你可以选择基本推荐模式或自定义偏好模式。")
 
@@ -76,7 +76,7 @@ if __name__ == "__main__":
         song_input = input("歌曲名称（或输入 'exit' 退出）：")
 
         if song_input.lower() == 'exit':
-            print("\n感谢使用明日方舟音乐推荐系统！")
+            print("\n感谢使用Clarity音乐推荐系统！")
             break
 
         song_name = find_song(song_input)
@@ -217,7 +217,7 @@ if __name__ == "__main__":
 
             print("\n是否继续尝试其他歌曲？")
             if not input("继续？（yes/no）：").lower().startswith('y'):
-                print("\n感谢使用明日方舟音乐推荐系统！")
+                print("\n感谢使用Clarity音乐推荐系统！")
                 break
 
         except Exception as e:
